@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasarım Kodlama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size:62.5%;/*1rem = 10px*/
+        }
+
+        body,h1,h2,ul{
+            margin:0;
+            padding:0;
+            
+        }
+        ul{
+            list-style: none;
+        }
+
+        /*******************/
+        body{
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .arkaplan{
+            background-color: #25373D;
+        }
+        .kapsayici{
+            width: 960px;
+            margin:0 auto;
+        }
+        
+        .ust{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 200px;
+        }
+
+        .ust .logo{
+            text-align: center;
+            color:#fff;
+        }
+        .ust .logo h1{
+            font-size:4rem;
+            letter-spacing: .5rem;
+        }
+
+        .ust .logo h1::first-letter{
+            color:#FCB941;
+        }
+
+        .ust .logo h1:hover::first-letter{
+            background-color: #FCB941;
+            color:#25373D;
+        }
+
+        .ust .logo h2{
+            font-size:2.4rem;
+        }
+
+        
+
+        
+
+        .ust .menu ul{
+            display: flex;
+        }
+        .ust .menu ul li{
+            margin:0 1rem;
+        }
+
+        .ust .menu ul a{
+            color:#fff;
+            text-decoration: none;
+            font-size:1.8rem;
+            padding:0 2rem;
+        }
+        .ust .menu ul a:hover{
+            color:#FCB941;
+        }
+
+        .orta .bolum1{
+            margin-top:20px;
+            border:10px solid #25373D;
+            padding:20px;
+        }
+
+        .orta .bolum1 img{
+            display: block;
+            width: 100%;
+        }
+
+        .orta .bolum2{
+            margin-top:20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .orta .bolum2 .kutu{
+            flex-basis: 290px;
+        }
+
+        .orta .bolum2 .kutu h2{
+            font-size: 2rem;
+        }
+
+        .orta .bolum2 .kutu p{
+            font-size: 1.6rem;
+        }
+
+        .orta .bolum3{
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+        }
+
+        .orta .bolum3 h1{
+            font-size:2.5rem;
+        }
+
+        .orta .bolum3 p{
+            font-size:1.6rem;
+        }
+
+        .alt{
+            margin-top:20px;
+            padding:20px 0;
+            display: flex;
+            gap:20px;
+        }
+        .alt .baglanti{
+            flex-grow: 1;
+        }
+
+        .alt .baglanti ul li{
+            border-bottom:dotted 1px #FCB941;
+            margin:5px 0;
+        }
+
+        .alt .baglanti a{
+            font-size:1.6rem;
+            text-decoration: none;
+            color:#FCB941;
+        }
+
+
+        .cizgi{
+            border-top:dotted 1px #FCB941;
+            margin:20px 0;
+        }
+
+        .alt-kenar-10{
+            border-bottom:10px solid #FCB941;
+        }
+
+        .prusa{
+            width: 290px;
+            height: 180px;
+        }
+        
+        .d3{
+            width: 450px;
+            height: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- sayfa üstü-->
+    <div class="arkaplan alt-kenar-10">
+        <div class="ust kapsayici">
+            <div class="logo">
+                <h1>3D Baskı</h1>
+                <h2>WorldOf3D</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#first">Ana Sayfa</a></li>
+                    <li><a href="#second">Ürünler</a></li>
+                    <li><a href="#third">3D Yazıcı</a></li>
+                    <li><a href="#fourth">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- sayfa ortası-->
+    <div class="orta kapsayici">
+        <div id="first" class="bolum1">
+            <img src="images/prusai3.webp" alt="Kapak resmi">
+        </div>
+        <div id="second" class="bolum2">
+            <div class="kutu">
+                <img class="prusa" src="images/mini+.webp" alt="">
+                <h2>Prusa Mini+</h2>
+                <p>7 "x 7" x 7 "(18 x 18 x18 cm) yapı hacmine sahip MINI tam donanımlı bir 3D yazıcıdır. </p>
+            </div>
+            <div class="kutu">
+                <img class="prusa" src="images/mk3s.jpg" alt="">
+                <h2>Prusa MK3S</h2>
+                <p>Üretici : Prusa Research.
+                    Baskı Hacmi : 250x210x200 mm.
+                </p>
+                <p>  Baskı Tablası : Isıtılmış, çıkarılabilir ve PEI kaplı
+                    Filament Çapı : 1.75 mm.
+                </p>
+                <p> Maksimum Extruder Sıcaklığı : 300ºC.
+                    Maksimum Yatak Sıcaklığı : 120ºC.
+                </p>
+            </div>
+            <div class="kutu">
+                <img class="prusa" src="images/mk4.webp" alt="">
+                <h2>Prusa MK4</h2>
+                <p>Kolayca yüksek hızlı baskı</p>
+                <p>Breakout Board ile Nextruder</p>
+                <p>32-bit xBuddy Anakart</p>
+                <p>Renkli LCD ekran ve basit kullanıcı arayüzü</p>
+            </div>
+
+
+        </div>
+        <div class="cizgi"></div>
+        <div id="third" class="bolum3">
+            <div class="icerik">
+                <h1>3D Yazıcı Nedir</h1>
+                <p>3D baskı veya katkı üretimi, dijital bir dosyadan üç boyutlu katı cisimler yapma işlemidir. 3B basılı bir nesnenin inşa edilmesi, ilave işlemler kullanılarak elde edilir.
+                     İlave bir işlemde, nesne imal edilene kadar ardışık malzeme katmanlarını üst üste inşa ederek oluşturulur. Bu katmanların her biri, nihai nesnenin ince dilimlenmiş yatay bir kesiti olarak görülebilir. 
+                     3D baskı, örneğin bir freze makinesinde bir metal veya plastik parçasını kesen / oyup çıkartan üretimin tam tersidir. 3B baskı, geleneksel üretim yöntemlerinden daha az malzeme kullanarak karmaşık şekiller oluşturmanıza olanak sağlar.
+                </p>
+            </div>
+            <div class="gorsel">
+                <img class="d3" src="images/nedir.jpg" alt="İlgili ürün bilgisi">
+            </div>
+        </div>
+
+        <div class="cizgi"></div>
+        <div class="bolum3">
+            <div class="gorsel">
+                <img class="d3" src="images/nasıl.jpg" alt="İlgili ürün bilgisi">
+            </div>
+            <div class="icerik">
+                <h1>3D Printer Nasıl Çalışır</h1>
+                <p>3D yazıcıların çalışma mantığı, herhangi bir üç boyutlu modelin katmanlama teknolojisi ile plastiği eriterek üstüste yazarak modeli oluşturmasıdır.
+                    Basım 3 aşamadan oluşur:<br/>
+                    Modelleme: Kullanıcı ilk olarak yapmak istediği modeli çizer ya da hazır olarak bulur ve bu modeli STL dosya formatına çevirerek ilk aşamayı başarıyla tamamlar.
+                    <br/>3D Baskı: Baskı işleminde obje katmanlar halinde üst üste serilerek oluşturulur. Bu katmanlar plastik eritme, laser sintering, sterolitografi gibi farklı yöntemler ile gerçekleştirilir.
+                    <br/> Model Temizleme: Son olarak 3D yazıcı ile oluşturduğumuz objeler hatalar veya destekler içerebilir. Bu durumda son bir yüzey temizleme, iyileştirme veya geliştirme son ölçüye getirme işlemleri uygulanabilir. 
+                    </p>
+            </div>
+        </div>
+        <div class="cizgi"></div>
+        <div class="bolum3">
+            <div class="icerik">
+                <h1>3D Yazıcı Nerede Kullanılır</h1>
+                <p>Diş hekimliğinde çeşitli alanlarda,
+                    Gözlük,
+                    Mimari ölçekli modeller ve maketler,
+                    Protez,
+                    Film endüstrisi,
+                    Tasarım (lambalar, mobilya vb.),
+                    Paleontolojide fosillerin yeniden inşası,
+                    Arkeolojide antik eserlerin kopyalanması,
+                    Adli patolojide kemiklerin ve vücut parçalarının yeniden yapılandırılması,
+                    Olay yerinden alınan ağır hasarlı delilleri yeniden yapılandırma gibi.</p>
+            </div>
+            <div class="gorsel">
+                <img class="d3" src="images/nerede.webp" alt="İlgili ürün bilgisi">
+            </div>
+        </div>
+    </div>
+
+    <!-- sayfa altı-->
+    <div id="fourth" class="arkaplan">
+        <div class="alt kapsayici">
+            <div class="baglanti">
+                <ul>
+                    <li><a href="#">İletişim Bilgileri</a></li>
+                    <li><a href="#">Ad Soyad: </a></li>
+                    <li><a href="#">Okul Numarası: </a></li>
+                    <li><a href="#">Mail: </a></li>
+                    <li><a href="#">Telefon Numarası: </a></li>
+                </ul>
+            </div>
+            <div class="baglanti">
+                <ul>
+                    <li><a href="#">--</a></li>
+                    <li><a href="#">Selim Doğan</a></li>
+                    <li><a href="#">20070380012</a></li>
+                    <li><a href="#">selimdogan162@gmail.com</a></li>
+                    <li><a href="#">05xx-xxx-xx-xx</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
